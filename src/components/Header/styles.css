@@ -1,17 +1,17 @@
 :root {
     --mainColor: rgba(67, 0, 58, 0.8);
     --lighterColor: rgba(116, 9, 102, 0.8);
-    --imgWidth: 90px;
-    --imgHeight: 90px;
+    --imgWidth: 70px;
+    --imgHeight: 70px;
 }
 
 header {
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 100%;
+    justify-content: space-between;
+    width: 100vw;
     height: 10vh;
-    background-color: black;
+    background-color: rgb(119, 64, 105);
     padding: 40px 0;
 }
 
@@ -19,7 +19,6 @@ header {
     width: var(--imgWidth);
     height: var(--imgHeight);
     border-radius: 50%;
-    cursor: ponter;
     transition: 0.5s;
     text-align: center;
 }
@@ -48,20 +47,14 @@ header {
     display: table;
 }
 
-#img:hover {
-    opacity: 0.8;
+#logo {
+    padding-left: 50px;
 }
 
-#description {
-    margin-left: 20px;
-    color: white;
-    text-align: center;
+.navigation {
+    float: right;
 }
 
-#description h1,
-h2 {
-    font-size: 5vh;
-}
 
 
 
