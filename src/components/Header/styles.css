@@ -6,13 +6,18 @@
 }
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: block;
     width: 100vw;
-    height: 10vh;
-    background-color: rgb(119, 64, 105);
-    padding: 40px 0;
+    height: 90px;
+    background-color: var(--mainColor);
+    padding-top: 18px;
+}
+
+.header {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
 }
 
 #img {
@@ -48,7 +53,8 @@ header {
 }
 
 #logo {
-    padding-left: 50px;
+    position: relative;
+    top: -10px;
 }
 
 .navigation {

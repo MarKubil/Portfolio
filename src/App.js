@@ -4,7 +4,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 
 // Components
-import Header from './components/Header/header.js';
+import Header from './components/Header/index.js';
+import Home from './components/Home/index.js'
 
 
 // Bootstrap
@@ -23,8 +24,8 @@ function App() {
             <Header />
           </Row>
           <Routes>
-            <Route exact path="/" element="" />
-            <Route path="about" element="" />
+            <Route exact path="/" element={Home} />
+            <Route path="about" element={Home} />
           </Routes>
         </Router>
     </Container>

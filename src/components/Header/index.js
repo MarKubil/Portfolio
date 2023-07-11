@@ -8,7 +8,7 @@ import NavTabs from '../NavBar/NavTabs';
 function Header() {
     return (
         <header className="container-fluid">
-            
+            <div className="header">
             <div id="logo">
                 <div id="outer">
                     <div id="inner">
@@ -16,10 +16,8 @@ function Header() {
                     </div>
                 </div>
             </div>
-            <div className="navigation mr-auto">
-                <NavTabs />
+            <NavTabs />
             </div>
-
         </header>
     )
 };
