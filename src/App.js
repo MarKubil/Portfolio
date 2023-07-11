@@ -5,7 +5,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 // Components
 import Header from './components/Header/index.js';
-import Home from './components/Home/index.js'
+import Home from './components/Home/index.js';
+import Projects from './components/Projects/index.js';
 
 
 // Bootstrap
@@ -26,7 +27,7 @@ function App() {
         <Row>
           <Routes>
             <Route exact path="/" element={Home} />
-            <Route path="about" element="{Home}" />
+            <Route path="Projects" element={Projects} />
           </Routes>
         </Row>
       </Router>
