@@ -1,0 +1,15 @@
+:root {
+    --mainColor: rgba(67, 0, 58, 0.8);
+    --lighterColor: rgba(116, 9, 102, 0.8);
+}
+
+.box {
+    background-color: var(--lighterColor);
+    width: 100vw;
+    height: calc(100vh - 90px);
+}
+
+.content {
+    max-width: 1300px;
+    margin: auto;
+}

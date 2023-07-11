@@ -19,15 +19,18 @@ import './assets/styles.css'
 function App() {
   return <>
     <Container fluid>
-        <Router>
-          <Row>
-            <Header />
-          </Row>
+      <Router>
+        <Row>
+          <Header />
+        </Row>
+        <Row>
           <Routes>
             <Route exact path="/" element={Home} />
-            <Route path="about" element={Home} />
+            <Route path="about" element="{Home}" />
           </Routes>
-        </Router>
+        </Row>
+      </Router>
+
     </Container>
   </>;
 }

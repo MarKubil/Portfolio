@@ -6,11 +6,9 @@
 }
 
 header {
-    display: block;
-    width: 100vw;
     height: 90px;
     background-color: var(--mainColor);
-    padding-top: 18px;
+    width: 100vw;
 }
 
 .header {
@@ -18,6 +16,8 @@ header {
     display: flex;
     justify-content: space-between;
     margin: auto;
+    padding-top: 18px;
+    
 }
 
 #img {
@@ -56,12 +56,6 @@ header {
     position: relative;
     top: -10px;
 }
-
-.navigation {
-    float: right;
-}
-
-
 
 
 @keyframes rotateCircle {
