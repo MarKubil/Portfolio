@@ -24,20 +24,18 @@
     color: white;
     padding: 5px 10px;
 }
-
-
-#weather-app {
-    background-image: url("../../assets/img/weather-app.png");
+/* Projects */
+#plan-my-trip {
+    background-image: url("../../assets/img/planMyTrip.gif");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
     opacity: 0.8;
 }
 
-#weather-app:hover {
+#plan-my-trip:hover {
 opacity: 1;
 }
-
 
 #colour-factory {
     background-image: url("../../assets/img/ColourFactory.gif");
@@ -45,8 +43,55 @@ opacity: 1;
     background-repeat: no-repeat;
     background-position: center;
     opacity: 0.8;
+    animation-delay: 1s;
 }
 
 #colour-factory:hover {
 opacity: 1;
+}
+
+#weather-app {
+    background-image: url("../../assets/img/weather-app.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    opacity: 0.8;
+    animation-delay: 2s;
+}
+
+#weather-app:hover {
+opacity: 1;
+}
+
+#coding-quiz {
+    background-image: url("../../assets/img/codingQuiz.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.8;
+    animation-delay: 3s;
+}
+
+#coding-quiz:hover {
+opacity: 1;
+}
+
+.showUp {
+    animation-name: ShowUp;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+    animation-duration: 1s;
+}
+
+@keyframes ShowUp {
+
+    0% {
+        opacity: 0;
+        transform: scale(0)
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
 }

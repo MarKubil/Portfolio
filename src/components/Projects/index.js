@@ -12,20 +12,20 @@ function Projects() {
         <div className="box">
             <div className="content">
                 <div className="row">
-                    <a target="_blank" href="https://google.lt" id="weather-app" className="col-lg-6 col-sm-12 p-cont">
-                        <h4 className="p-description">Weather forecast application</h4>
+                    <a target="_blank" href="https://mariuml.github.io/plan-my-trip/" id="plan-my-trip" className="col-lg-6 col-sm-12 p-cont showUp">
+                        <h4 className="p-description">Plan My Trip</h4>
                     </a>
-                    <a target="_blank" href="https://thecolourfactory.netlify.app/" id="colour-factory" className="col-lg-6 col-sm-12 p-cont">
-                        <h4 className="p-description">Colour factory application</h4>
+                    <a target="_blank" href="https://thecolourfactory.netlify.app/" id="colour-factory" className="col-lg-6 col-sm-12 p-cont showUp">
+                        <h4 className="p-description">Colour factory</h4>
                     </a>
                 </div>
                 <div className="row">
-                    <div className="col-lg-6 col-sm-12 p-cont">
-
-                    </div>
-                    <div className="col-lg-6 col-sm-12 p-cont">
-
-                    </div>
+                    <a target="_blank" href="https://markubil.github.io/weather-forecast/" id="weather-app" className="col-lg-6 col-sm-12 p-cont showUp">
+                        <h4 className="p-description">Weather forecast</h4>
+                    </a>
+                    <a target="_blank" href="https://markubil.github.io/Coding-quiz/" id="coding-quiz" className="col-lg-6 col-sm-12 p-cont showUp">
+                        <h4 className="p-description">Coding quiz</h4>
+                    </a>
                 </div>
             </div>
         </div>
