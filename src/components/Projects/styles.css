@@ -1,12 +1,52 @@
 .p-cont {
-    border: 1px solid black;
+    border: 3px solid black;
     width: 45%;
     height: 20rem;
     margin: 2.5%;
     border-radius: 5px;
+    padding: 0;
 }
 
 .p-cont:hover {
-    transform: translateY(-3px);
+    transform: translateY(-5px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, .2);
+}
+
+.p-description {
+    display: inline-block;
+    position: relative;
+    top: 80%;
+    background-color: var(--lighterColor);
+    font-size: 1.5em;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+}
+
+
+#weather-app {
+    background-image: url("../../assets/img/weather-app.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    opacity: 0.8;
+}
+
+#weather-app:hover {
+opacity: 1;
+}
+
+
+#colour-factory {
+    background-image: url("../../assets/img/ColourFactory.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.8;
+}
+
+#colour-factory:hover {
+opacity: 1;
 }
