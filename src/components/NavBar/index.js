@@ -2,19 +2,18 @@ import { NavLink } from 'react-router-dom';
 
 
 function NavTabs() {
-
-    return (
-      <nav>
-      <ul className="nav nav-pills bg-transparent" style={{fontFamily: "'Fredoka One', cursive", fontSize: "1.5rem"}}>
+  return (
+    <nav>
+      <ul className="nav nav-pills bg-transparent" style={{ fontFamily: "'Fredoka One', cursive", fontSize: "1.5rem" }}>
         <li className="nav-item">
           <NavLink
             to="/"
             end
-            className={( { isActive }) =>
+            className={({ isActive }) =>
               isActive ? 'nav-link active' : 'nav-link'
             }
           >
-          Home
+            Home
           </NavLink>
         </li>
         <li className="nav-item">
@@ -24,23 +23,12 @@ function NavTabs() {
               isActive ? 'nav-link active' : 'nav-link'
             }
           >
-           Projects
+            Projects
           </NavLink>
         </li>
         <li className="nav-item">
           <NavLink
-            to="blog"
-            className={({ isActive }) =>
-              isActive ? 'nav-link active' : 'nav-link'
-            }
-          >
-            Contacts
-          </NavLink>
-        </li>
-        <li className="nav-item">
-          <NavLink
-            to="contact"
-            end
+            to="About"
             className={({ isActive }) =>
               isActive ? 'nav-link active' : 'nav-link'
             }
@@ -48,10 +36,20 @@ function NavTabs() {
             About me
           </NavLink>
         </li>
+        <li className="nav-item">
+          <NavLink
+            to="contacts"
+            end
+            className={({ isActive }) =>
+              isActive ? 'nav-link active' : 'nav-link'
+            }
+          >
+            Contacts
+          </NavLink>
+        </li>
       </ul>
-      </nav>
-    );
-  }
-  
-  export default NavTabs;
-  
+    </nav>
+  );
+}
+
+export default NavTabs;

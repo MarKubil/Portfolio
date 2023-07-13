@@ -1,7 +1,7 @@
 import "./styles.css";
 import "bootstrap/dist/css/bootstrap.min.css"
 import image from "../../assets/img/logo.png"
-import NavTabs from '../NavBar/NavTabs';
+import NavTabs from '../NavBar';
 
 
 

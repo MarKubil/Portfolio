@@ -7,33 +7,23 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header/index.js';
 import Home from './components/Home/index.js';
 import Projects from './components/Projects/index.js';
-
-
-// Bootstrap
-import Row from 'react-bootstrap/Row';
-import Container from 'react-bootstrap/Container';
+import About from './components/About/index.js'
 
 // CSS
 import './assets/styles.css'
 
 
 function App() {
-  return <>
-    <Container fluid>
-      <Router>
-        <Row>
-          <Header />
-        </Row>
-        <Row>
-          <Routes>
-            <Route exact path="/" element={Home} />
-            <Route path="Projects" element={Projects} />
-          </Routes>
-        </Row>
-      </Router>
-
-    </Container>
-  </>;
+  return (
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;
